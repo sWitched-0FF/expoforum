@@ -191,9 +191,10 @@ header{
 		height:30px;
 		}
 	.headersearch input{
-		padding:5px 25px 5px 5px;
+		padding:0px 25px 0px 5px;
 		width:180px;
-		height:20px;
+		height:30px;
+		line-height:30px;
 		background:#ffffff;
 		color:#666666;
 		border:0 none;
@@ -420,6 +421,8 @@ header{
 		margin:12px 0;
 		padding:0;
 		list-style:none;
+		height:150px;
+		overflow:hidden;
 		}
 		.newsbaritem{
 			font-size:13px;
@@ -436,6 +439,7 @@ header{
 	display:block;
 	float:left;
 	padding:7px 0 0 0;
+	text-align:left;
 	}
 	.newssubscribe input{
 		padding:5px;
@@ -490,7 +494,7 @@ header{
 		margin:0;
 		height:200px;
 		width:6000px;
-		position:absolute;
+		position:relative;
 		list-style:none;
 		}
 		.partnerscell{
@@ -608,3 +612,115 @@ footer{
 		.youtube{
 			background:url(../images/design/iconssocial.png) -159px 3px no-repeat;
 			}
+/*Разные разрешения подгоняем*/
+
+/*1024px*/
+@media only screen and (max-width: 1230px) {
+	html, body{
+		min-width:904px;
+		}
+	.container{
+		width:904px;
+		}
+	.headersearch{
+		display:none;
+		}
+	.headcontacts{
+		padding:19px 10px 12px 20px;
+		width:135px;
+		}
+	.headmenu{
+		padding:30px 10px 0 0;
+		}
+	.slidercontent{
+		width:594px;
+		}
+	#advanced{
+		display:none;
+		}
+	.newsbar{
+		width:248px;
+		height:875px;
+		}
+		.newsbarlist{
+			height:669px;
+			}
+		.newssubscribe input{
+			margin:10px 0;
+			width:225px;
+			}
+		.newssubscribe button{
+			margin:0 0 10px 0;
+			width:235px;
+			}
+	.partnersblock{
+		margin:0 0 0 20px;
+		}
+	.column3{
+		width:290px;
+		}
+	.copyright{
+		width:281px;
+		}
+	.footercontacts{
+		width:260px;
+		}
+	.socialicon{
+		width:30px;
+		}
+} 
+
+/*1920px*/
+@media only screen and (min-width : 1830px){
+	html, body{
+		min-width:1828px;
+		}
+	.container{
+		width:1828px;
+		}
+	.topcontentblock{
+		position:relative;
+		}
+	.infobannersblock{
+		position:absolute;
+		top:0;
+		right:0;
+		width:614px;
+		height:596px;
+		}
+		.announcements{
+			width:257px;
+			margin-left:20px;
+			}
+	.promoblockspart{
+		width:1232px;
+		height:288px;
+		margin:0 0 20px 0;
+		}
+		.promoblock{
+			float:left;
+			margin:0 0 0 20px;
+			}
+	.newsbar{
+		width:556px;
+		height:566px;
+		}
+		.newsbarlist{
+			height:454px;
+			}
+	.partnersblock{
+		margin:0 0 0 20px;
+		width:1172px;
+		}
+	.partnersview{
+		width:1146px;
+		margin:15px 15px 0 15px;
+		}
+		.partnerscell{
+			width:194px;
+			}
+	.bottomnav .container,
+	footer .container{
+		width:1212px;
+		}
+} 
