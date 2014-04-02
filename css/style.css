@@ -269,6 +269,9 @@ header{
 			.newsicon{
 				background:url(../images/design/iconslinks.png) left -182px no-repeat;
 				}
+			.newsiconblue{
+				background:url(../images/design/iconslinks.png) left -224px no-repeat;
+				}
 .slidernav{
 	width:290px;
 	height:300px;
@@ -284,7 +287,7 @@ header{
 		.slidernavlink{
 			display:block;
 			padding:40px 20px 30px 30px;
-			font-size:16px;
+			font-size:20px;
 			text-decoration:none;
 			height:30px;
 			vertical-align:middle;
@@ -297,6 +300,13 @@ header{
 		.slidernavlink.active{
 			background:url(../images/design/leftarr.png) right center no-repeat #666666;
 			margin:0 -20px 0 0;
+			padding:40px 40px 30px 30px;
+			}
+		.slidernavlink.long:hover,
+		.slidernavlink.long.active{
+			background:url(../images/design/leftarr.png) right center no-repeat #666666;
+			margin:0 -20px 0 0;
+			padding:30px 40px 30px 30px;
 			}
 .slidercontent{
 	width:902px;
@@ -407,15 +417,23 @@ header{
 		margin:0 0 20px 0;
 		}
 .newsbar{
+	color:#333333;
 	width:556px;
 	height:258px;
 	float:left;
 	margin:0 0 20px 0;
 	padding:20px 20px 10px 20px;
-	background:#0072ce;
+	background:#ffffff;
 	}
 	.newsbar h3{
+		color:#0072ce;
 		margin:0;
+		}
+	.newsbar a{
+		color:#0072ce;
+		}
+	.newsbar time{
+		color:#999999;
 		}
 	.newsbarlist{
 		margin:12px 0;
@@ -443,11 +461,11 @@ header{
 	}
 	.newssubscribe input{
 		padding:5px;
-		width:186px;
+		width:184px;
 		height:20px;
 		background:#ffffff;
 		color:#666666;
-		border:0 none;
+		border:1px solid #0072ce;
 		border-radius:3px;
 		}
 	.newssubscribe button{
