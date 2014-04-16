@@ -710,17 +710,8 @@ footer{
 			width:257px;
 			margin-left:20px;
 			}
-	.promoblockspart{
-		width:1232px;
-		height:288px;
-		margin:0 0 20px 0;
-		}
-		.promoblock{
-			float:left;
-			margin:0 0 0 20px;
-			}
 	.newsbar{
-		width:556px;
+		width:904px;
 		height:566px;
 		}
 		.newsbarlist{
@@ -728,12 +719,18 @@ footer{
 			}
 	.partnersblock{
 		margin:0 0 0 20px;
-		width:1172px;
+		width:208px;
+		height:556px;
+		float:right;
 		}
 	.partnersview{
-		width:1146px;
+		width:173px;
+		height:500px;
 		margin:15px 15px 0 15px;
 		}
+		.partnerslist {
+			height:500px;
+			}
 		.partnerscell{
 			width:194px;
 			}
