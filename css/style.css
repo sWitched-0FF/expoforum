@@ -122,7 +122,15 @@ input::-moz-placeholder {
 	width:1212px;
 	margin:0 auto;
 	}
-	
+.small{
+	font-size:0.8em;
+	}
+	h2 .small{
+		font-size:0.6em;
+		}
+.rightlink{
+	float:right;
+	}
 /*Header*/
 header{
 	background:#2dccd3;
@@ -356,6 +364,130 @@ header{
 				background:#9f46b1;
 				color:#ffffff;
 				}
+.mainblock{
+	margin:0 0 0 310px;
+	}
+	.textblock{
+		padding:5px 20px 15px 20px;
+		margin:0 0 20px 0;
+		background:#ffffff;
+		color:#333333;
+		overflow:hidden;
+		}
+	.textblock a{
+		color:#0072ce;
+		}
+		.maps{
+			color:#ffffff;
+			background:#f6cb05;
+			}
+			.maps a{
+				color:#ffffff;
+				}
+			.mappart{
+				padding:15px 0 5px 15px;
+				float:right;
+				}
+				.yellowbutton{
+					display:inline-block;
+					padding:5px 15px;
+					margin:4px 0;
+					min-width:167px;
+					line-height:26px;
+					color:#ffffff;
+					text-align:center;
+					font-family:arial;
+					font-weight:bold;
+					text-decoration:none;
+					border:0 none;
+					border-radius:3px;
+					background:#efa908;
+					box-shadow:0 4px 0 #eb9307;
+					cursor:pointer;
+					}
+					.yellowbutton:hover{
+						background:#ffaf30;
+						}
+				.mapbtn{
+					width:200px;
+					text-align:center;
+					}
+				.probki{
+					font-size:0.8em;
+					line-height:1.3em;
+					padding:10px 0;
+					margin:2em 0;
+					}
+					.probki .probkirate{
+						display:block;
+						margin:-10px 12px 0 0;
+						height:50px;
+						width:50px;
+						float:left;
+						font-size:2.5em;
+						line-height:50px;
+						text-align:center;
+						border-radius:50%;
+						}
+						.lvl5{
+							background:#eb9307;
+							}
+				.copasicon{
+					font-size:0.8em;
+					line-height:1.3em;
+					padding:12px 0 12px 60px;
+					background:url(../images/design/iconslinks.png) 0px -270px no-repeat;
+					}
+		.leftimg{
+			float:left;
+			margin:0 20px 5px 0;
+			}
+		.righttextblock{
+			float:left;
+			}
+		.bustime{
+			margin:0px 0 20px 80px;
+			line-height:1.3em;
+			list-style:none;
+			}
+		.busicon{
+			font-weight:900;
+			padding:2px 0 3px 49px;
+			margin:6px 0 0 0;
+			background:url(../images/design/iconstransport.png) 0px 0px no-repeat;
+			}
+		.trallicon{
+			font-weight:900;
+			padding:12px 0 3px 49px;
+			margin:6px 0 0 0;
+			background:url(../images/design/iconstransport.png) 0px -30px no-repeat;
+			}
+		.furgonicon{
+			font-weight:900;
+			padding:2px 0 3px 49px;
+			margin:6px 0 0 0;
+			background:url(../images/design/iconstransport.png) 0px -78px no-repeat;
+			}
+	.accordion{
+		border-top:1px solid #999999;
+		}
+		.accordiontitle{
+			margin:0.5em 0;
+			background:url(../images/design/arrowaccord.png) right -61px no-repeat;
+			cursor:pointer;
+			}
+		.closed .accordiontitle{
+			background:url(../images/design/arrowaccord.png) right -11px no-repeat;
+			}
+		.accordiontext{
+			border-top:1px solid #cccccc;
+			overflow:hidden;
+			padding:0 0 10px 0;
+			}
+		.closed .accordiontext{
+			display:none;
+			}
+
 .announcements{
 	background:#ff8200;
 	padding:20px 10px 10px 20px;
@@ -411,6 +543,14 @@ header{
 		}
 	.bluebanner{
 		background:#0072ce;
+		}
+.sideblock{
+	margin:0 0 20px 0;
+	}
+	.sideblocktext{
+		padding:20px;
+		text-align:left;
+		font-size:1.15em;
 		}
 .promoblockspart{
 	float:right;
@@ -653,6 +793,11 @@ footer{
 			background:url(../images/design/iconssocial.png) -159px 3px no-repeat;
 			}
 /*Разные разрешения подгоняем*/
+
+.w1280px .container {
+	margin: 0 auto;
+	width: 1212px;
+}
 
 /*1024px*/
 @media only screen and (max-width: 1230px) {

@@ -24,6 +24,11 @@
 		});
 	slideNav.find('li:first').find('a').trigger('click');
 	var timerId = setInterval(nextSlide, 10000,slideNav);
+
+	$('.accordiontitle').click(function(){
+		$(this).siblings().slideToggle();
+		$(this).parent().toggleClass('closed');
+		});
 });
 
 function changeslide(slideNum,slideNav,slideList){
