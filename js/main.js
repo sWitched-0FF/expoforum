@@ -29,6 +29,13 @@
 		$(this).siblings().slideToggle();
 		$(this).parent().toggleClass('closed');
 		});
+	$('.tabscontrol a').click(function(e){
+		e.stopPropagation();
+		var indextab = $(this).parent().index();
+		$(this).parent().siblings().removeClass('active');
+		$(this).parent().addClass('active');
+		$(this).parent().parent().parent().find('.tabsblockpage:eq('+indextab+')').addClass('active').siblings().removeClass('active');
+		});
 });
 
 function changeslide(slideNum,slideNav,slideList){

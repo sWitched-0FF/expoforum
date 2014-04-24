@@ -131,6 +131,7 @@ input::-moz-placeholder {
 .rightlink{
 	float:right;
 	}
+
 /*Header*/
 header{
 	background:#2dccd3;
@@ -552,6 +553,13 @@ header{
 		text-align:left;
 		font-size:1.15em;
 		}
+		.sideblocktext.centertext{
+			text-align:center;
+			}
+			.centertext .newssubscribe{
+				float:none;
+				text-align:center;
+				}
 .promoblockspart{
 	float:right;
 	width:596px;
@@ -600,6 +608,128 @@ header{
 		padding:0 15px 2px 55px;
 		text-align:left;
 		}
+.news{
+	color:#ffffff;
+	background:#84bd00;
+	}
+	.news h2{
+		margin:0.5em 0;
+		}
+	.newslist{
+		margin:10px 0 0 0;
+		padding:0;
+		list-style:none;
+		}
+	.newstimeblock{
+		display:block;
+		width:110px;
+		padding:6px 0 0 0;
+		float:left;
+		font-size:0.9em;
+		color:#999999;
+		}
+	.newsitemtext{
+		display:block;
+		margin:0 0 20px 115px;
+		}
+		.newsitemtext h3{
+			margin:0 0 12px 0;
+			}
+.tabscontrol{
+	display:block;
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+	.tabscontrol li{
+		display:inline-block;
+		}
+	.tabscontrol a{
+		display:block;
+		padding:7px 16px;
+		min-width:87px;
+		background:#3e8c0e;
+		color:#ffffff;
+		text-decoration:none;
+		font-family:arial;
+		font-weight:bold;
+		text-align:center;
+		border:0 none;
+		border-radius:3px 3px 0 0;
+		}
+		.tabscontrol a:hover,
+		.tabscontrol .active a{
+			background:#34750c;
+			}
+.tabsblockpages{
+	display:block;
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+	.tabsblockpage{
+		display:none;
+		padding:20px;
+		background:#34750c;
+		border-radius:0 0 3px 3px;
+		}
+	.tabsblockpage.active{
+		display:block;
+		}
+.newscontrolgroup{
+	display:inline-block;
+	width:42%;
+	margin:0 2em 0 0;
+	}
+	.newscontrolgroup label{
+		width:100px;
+		display:block;
+		float:left;
+		}
+	.newscontrolgroup select{
+		width:245px;
+		}
+.paginationblock{
+	display:inline-block;
+	margin:10px auto;
+	}
+	.pageslist{
+		display:block;
+		margin:0;
+		list-style:none;
+		}
+		.pageslist li{
+			display:inline-block;
+			}
+		.pageslist a{
+			display:block;
+			padding:7px 16px;
+			margin:0 0 0 4px;
+			background:#02589b;
+			color:#ffffff;
+			text-decoration:none;
+			font-family:arial;
+			font-weight:bold;
+			border:0 none;
+			border-radius:3px;
+			box-shadow:0 4px 0 #053861;
+			}
+			.pageslist a:hover{
+				background:#0873c6;
+				}
+		.pageslist span{
+			display:block;
+			padding:7px 16px;
+			margin:0 0 0 4px;
+			background:#626464;
+			color:#b1b2b2;
+			text-decoration:none;
+			font-family:arial;
+			font-weight:bold;
+			border:0 none;
+			border-radius:3px;
+			box-shadow:0 4px 0 #525353;
+			}
 .subscribeblock{
 	padding:12px 15px 13px 15px;
 	background:#02589b;
