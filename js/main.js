@@ -36,6 +36,22 @@
 		$(this).parent().addClass('active');
 		$(this).parent().parent().parent().find('.tabsblockpage:eq('+indextab+')').addClass('active').siblings().removeClass('active');
 		});
+	$('.tabsblockpage').fancyfields();
+	$('.newssubscribefilter').fancyfields();
+	$('.scroll-pane').jScrollPane({
+		showArrows: true,
+		autoReinitialise: true
+		});
+	$('#subscribe').click(function(){
+		$('#overlay').fadeIn();
+		return false;
+		});
+	$('#overlay, #closemodal').click(function(){
+		$('#overlay').fadeOut();
+		});
+	$('.modalbox').click(function(){
+		return false;
+		});
 });
 
 function changeslide(slideNum,slideNav,slideList){
