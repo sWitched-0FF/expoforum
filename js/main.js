@@ -38,6 +38,7 @@
 		});
 	$('.tabsblockpage').fancyfields();
 	$('.newssubscribefilter').fancyfields();
+	$('.eventsfilter select,.eventsfilter input[type!=text]').fancyfields();
 	$('.scroll-pane').jScrollPane({
 		showArrows: true,
 		autoReinitialise: true
@@ -52,6 +53,7 @@
 	$('.modalbox').click(function(){
 		return false;
 		});
+	$('.dateui').datepicker();
 });
 
 function changeslide(slideNum,slideNav,slideList){

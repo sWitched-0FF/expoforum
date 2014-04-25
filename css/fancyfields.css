@@ -10,7 +10,7 @@
 .ffResetWrapper,
 .ffButtonWrapper {display: inline-block; zoom: 1; *display: inline; margin: 2px 0;}
 
-.ffSelectWrapper{display: inline-block; zoom: 1; margin: 5px 0;}
+.ffSelectWrapper{display: inline-block; zoom: 1; margin: 0;}
 
 
 .ffTextBoxLeft, .ffTextBoxRight,
