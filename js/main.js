@@ -106,7 +106,6 @@ function partnerlistsort(obPartners,screenWidth){
 			else{
 				partnerList+='<a href="'+$('.partnerbox:eq('+i+')').attr('href')+'" class="partnerbox">'+$('.partnerbox:eq('+i+')').html()+'</a>';
 				}
-			console.log(i%5);
 			});
 		partnerList+='</ul>'
 		obPartners.html(partnerList);
