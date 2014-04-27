@@ -178,6 +178,8 @@ header{
 		}
 		.languageselect ul:hover{
 			height:auto;
+			position:relative;
+			z-index:2;
 			}
 		.languageicon{
 			display:block;
@@ -188,11 +190,14 @@ header{
 			text-decoration:none;
 			background:url(../images/design/flags.png) 0 0 no-repeat;
 			}
-			.languageicon.rus{
+			.languageicon.ru{
 				background:url(../images/design/flags.png) 0 0 no-repeat;
 				}
-			.languageicon.eng{
+			.languageicon.en{
 				background:url(../images/design/flags.png) 0 -20px no-repeat;
+				}
+			.languageicon.zh{
+				background:url(../images/design/flags.png) 0 -40px no-repeat;
 				}
 .headersearch{
 	display:block;
