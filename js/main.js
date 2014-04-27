@@ -54,7 +54,12 @@
 		return false;
 		});
 	$('.dateui').datepicker();
+	
+	partnerlistsort($('#partners'),$(document).width());
 });
+$(window).resize(function(){
+	partnerlistsort($('#partners'),$(document).width());
+	});
 
 function changeslide(slideNum,slideNav,slideList){
 	slideNav.find('a').removeClass('active');
@@ -70,4 +75,43 @@ function nextSlide(slideNav){
 		nextNum = 0;
 		}
 	slideNav.find('a').eq(nextNum).trigger('click');
+	}
+
+function partnerlistsort(obPartners,screenWidth){
+	if(screenWidth < 1830){
+		var partnerList = '<ul class="partnerslist">';
+		$.each($('.partnerbox'),function(i,val){
+			if(i%2){
+				partnerList+='<a href="'+$('.partnerbox:eq('+i+')').attr('href')+'" class="partnerbox">'+$('.partnerbox:eq('+i+')').html()+'</a></li>';
+				}
+			else{
+				partnerList+='<li class="partnerscell"><a href="'+$('.partnerbox:eq('+i+')').attr('href')+'" class="partnerbox">'+$('.partnerbox:eq('+i+')').html()+'</a>';
+				}
+			});
+		partnerList+='</ul>'
+		obPartners.html(partnerList);
+		obPartners.jcarousel('reload',{
+			wrap: 'circular'
+		});
+		}
+	else{
+		var partnerList = '<ul class="partnerslist">';
+		$.each($('.partnerbox'),function(i,val){
+			if((i%5)==4){
+				partnerList+='<a href="'+$('.partnerbox:eq('+i+')').attr('href')+'" class="partnerbox">'+$('.partnerbox:eq('+i+')').html()+'</a></li>';
+				}
+			else if((i%5)==0){
+				partnerList+='<li class="partnerscell"><a href="'+$('.partnerbox:eq('+i+')').attr('href')+'" class="partnerbox">'+$('.partnerbox:eq('+i+')').html()+'</a>';
+				}
+			else{
+				partnerList+='<a href="'+$('.partnerbox:eq('+i+')').attr('href')+'" class="partnerbox">'+$('.partnerbox:eq('+i+')').html()+'</a>';
+				}
+			console.log(i%5);
+			});
+		partnerList+='</ul>'
+		obPartners.html(partnerList);
+		obPartners.jcarousel('reload',{
+			wrap: 'circular'
+		});
+		}
 	}
