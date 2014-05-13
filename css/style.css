@@ -798,6 +798,33 @@ header{
 		padding:6px 40px 6px 0;
 		background:url(../images/design/iconslinks.png) right -325px no-repeat;
 		}
+.documentslist{
+	margin:1em 0;
+	list-style:none;
+	}
+	.documentitem{
+		display:block;
+		padding:14px 0 24px 70px;
+		background:url(../images/design/iconsdocs.png) left 0 no-repeat;
+		}
+		.documentitem.pdf{
+			background:url(../images/design/iconsdocs.png) left 0 no-repeat;
+			}
+		.documentitem.doc{
+			background:url(../images/design/iconsdocs.png) left -71px no-repeat;
+			}
+		.documentitem.xls{
+			background:url(../images/design/iconsdocs.png) left -142px no-repeat;
+			}
+		.documentitem.docx{
+			background:url(../images/design/iconsdocs.png) left -213px no-repeat;
+			}
+		.documentitem.jpg{
+			background:url(../images/design/iconsdocs.png) left -285px no-repeat;
+			}
+		.documentitem.ppt{
+			background:url(../images/design/iconsdocs.png) left -356px no-repeat;
+			}
 .paginationblock{
 	display:inline-block;
 	margin:10px auto;
