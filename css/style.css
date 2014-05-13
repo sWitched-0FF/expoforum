@@ -787,6 +787,17 @@ header{
 		.partnertext h3{
 			margin:0 0 12px 0;
 			}
+.medialist{
+	margin:1em 0;
+	list-style:none;
+	}
+	.mediaitem{
+		margin:0 0 2em 0;
+		}
+	.openmedia{
+		padding:6px 40px 6px 0;
+		background:url(../images/design/iconslinks.png) right -325px no-repeat;
+		}
 .paginationblock{
 	display:inline-block;
 	margin:10px auto;
