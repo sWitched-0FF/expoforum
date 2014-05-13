@@ -38,7 +38,7 @@
 		});
 	$('.tabsblockpage').fancyfields();
 	$('.newssubscribefilter').fancyfields();
-	$('.eventsfilter select,.eventsfilter input[type!=text]').fancyfields();
+	$('.eventsfilter select,.eventsfilter input[type!=text],fieldset input[type=checkbox]').fancyfields();
 	$('.scroll-pane').jScrollPane({
 		showArrows: true,
 		autoReinitialise: true
