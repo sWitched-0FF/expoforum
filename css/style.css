@@ -653,6 +653,21 @@ header{
 		.newsitemtext h3{
 			margin:0 0 12px 0;
 			}
+.newstext{
+	padding-top:1em;
+	text-align:left;
+	}
+	.newstext time{
+		color:#999999;
+		font-size:0.9em;
+		font-style:italic;
+		}
+	.newstext h2{
+		margin:0.7em 0;
+		}
+	.newstext img{
+		margin:0 0.7em 0.2em 0;
+		}
 .tabscontrol{
 	display:block;
 	margin:0;
