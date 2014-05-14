@@ -56,6 +56,12 @@
 	$('.dateui').datepicker();
 	
 	partnerlistsort($('#partners'),$(document).width());
+	
+	$('#languageselect .languageicon').click(function(e){
+		e.stopPropagation();
+		$('#languageselect input[name=language]').val($(this).attr('href').substring(1));
+		$('#languageselect').submit();
+		});
 });
 $(window).resize(function(){
 	partnerlistsort($('#partners'),$(document).width());
