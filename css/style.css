@@ -181,6 +181,13 @@ header{
 			position:relative;
 			z-index:2;
 			}
+		.languageselect ul li{
+			display:none;
+			}
+		.languageselect ul:hover li,
+		.languageselect ul li.active{
+			display:block;
+			}
 		.languageicon{
 			display:block;
 			width:30px;
