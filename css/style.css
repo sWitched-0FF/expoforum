@@ -169,24 +169,19 @@ header{
 	}
 	.languageselect ul{
 		display:block;
-		padding:0 20px 0 0;
+		padding:27px 20px 0 0;
 		width:30px;
-		height:20px;
+		height:0px;
 		overflow:hidden;
 		list-style:none;
+		position:relative;
+		z-index:2;
 		background:url(../images/design/arrowlangdown.png) 35px 5px no-repeat;
 		}
-		.languageselect ul:hover{
-			height:auto;
-			position:relative;
-			z-index:2;
-			}
-		.languageselect ul li{
-			display:none;
-			}
-		.languageselect ul:hover li,
 		.languageselect ul li.active{
-			display:block;
+			position:absolute;
+			top:0;
+			z-index:3;
 			}
 		.languageicon{
 			display:block;

@@ -57,6 +57,15 @@
 	
 	partnerlistsort($('#partners'),$(document).width());
 	
+	//animate languages list on hover
+	$('.languageselect ul').hover(
+		function(){
+			$(this).animate({height:($(this).find('li').length-1)*27+'px'},400);
+			},
+		function(){
+			$(this).animate({height:"0px"},400);
+			});
+	//submit language form on click
 	$('#languageselect .languageicon').click(function(e){
 		e.stopPropagation();
 		$('#languageselect input[name=language]').val($(this).attr('href').substring(1));
