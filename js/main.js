@@ -67,6 +67,7 @@
 	$('.dateui').datepicker();
 	
 	partnerlistsort($('#partners'),$(document).width());
+	bannersResort($('#banners'),$(document).width());
 	
 	//animate languages list on hover
 	$('.languageselect ul').hover(
@@ -144,7 +145,6 @@ function partnerlistsort(obPartners,screenWidth){
 
 function bannersResort(obBanners,screenWidth){
 	if(screenWidth < 1830){
-		$('.infobanner:eq(1)').removeClass('outerlist');
 		var bannersList = '<ul class="bannerslist">';
 		$.each($('.infobanner'),function(i,val){
 			bannersList+='<li>'+$('.infobanner:eq('+i+')').parent().html()+'</li>';
@@ -154,18 +154,20 @@ function bannersResort(obBanners,screenWidth){
 		obBanners.jcarousel('reload',{
 			wrap: 'circular'
 		});
+		$('#noslidebanner').hide().html('');
 	}
 	else{
-		var bannersList = $('.infobanner:eq(1)').addClass('outerlist').parent().html() + '<div id="banners"><ul class="bannerslist">';
+		var bannersList = '<ul class="bannerslist">';
 		$.each($('.infobanner'),function(i,val){
-			if(i>=1){
+			if(i){
 				bannersList+='<li>'+$('.infobanner:eq('+i+')').parent().html()+'</li>';
 			}
 			});
-		bannersList+='</ul></div>';
+		bannersList+='</ul>';
+		$('#noslidebanner').html($('.infobanner:eq(0)').parent().html()).fadeIn();
 
-		obBanners.parent().html(bannersList);
-		$('#banners').jcarousel({
+		obBanners.html(bannersList);
+		obBanners.jcarousel('reload',{
 			wrap: 'circular'
 		});
 		}
