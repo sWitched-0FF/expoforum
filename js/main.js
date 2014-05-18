@@ -5,12 +5,23 @@
 	$('#promoslider').jcarousel({
 		wrap: 'circular'
 	});
+	$('#banners').jcarousel({
+		wrap: 'circular'
+	});
 	$('#prevslide').click(function() {
 		$('#partners').jcarousel('scroll', '-=1');
 		return false;
 	});
 	$('#nextslide').click(function() {
 		$('#partners').jcarousel('scroll', '+=1');
+		return false;
+	});
+	$('#prevbanner').click(function() {
+		$('#banners').jcarousel('scroll', '-=1');
+		return false;
+	});
+	$('#nextbanner').click(function() {
+		$('#banners').jcarousel('scroll', '+=1');
 		return false;
 	});
 	
@@ -74,6 +85,7 @@
 });
 $(window).resize(function(){
 	partnerlistsort($('#partners'),$(document).width());
+	bannersResort($('#banners'),$(document).width());
 	});
 
 function changeslide(slideNum,slideNav,slideList){
@@ -125,6 +137,35 @@ function partnerlistsort(obPartners,screenWidth){
 		partnerList+='</ul>'
 		obPartners.html(partnerList);
 		obPartners.jcarousel('reload',{
+			wrap: 'circular'
+		});
+		}
+	}
+
+function bannersResort(obBanners,screenWidth){
+	if(screenWidth < 1830){
+		$('.infobanner:eq(1)').removeClass('outerlist');
+		var bannersList = '<ul class="bannerslist">';
+		$.each($('.infobanner'),function(i,val){
+			bannersList+='<li>'+$('.infobanner:eq('+i+')').parent().html()+'</li>';
+			});
+		bannersList+='</ul>';
+		obBanners.html(bannersList);
+		obBanners.jcarousel('reload',{
+			wrap: 'circular'
+		});
+	}
+	else{
+		var bannersList = $('.infobanner:eq(1)').addClass('outerlist').parent().html() + '<div id="banners"><ul class="bannerslist">';
+		$.each($('.infobanner'),function(i,val){
+			if(i>=1){
+				bannersList+='<li>'+$('.infobanner:eq('+i+')').parent().html()+'</li>';
+			}
+			});
+		bannersList+='</ul></div>';
+
+		obBanners.parent().html(bannersList);
+		$('#banners').jcarousel({
 			wrap: 'circular'
 		});
 		}

@@ -563,6 +563,55 @@ header{
 	.bluebanner{
 		background:#0072ce;
 		}
+.infobannersview{
+	width:922px;
+	height:308px;
+	float:left;
+	margin:0;
+	position:relative;
+	overflow:visible;
+	}
+	#banners{
+		overflow:hidden;
+		}
+	.bannerslist{
+		display:block;
+		padding:0;
+		margin:0;
+		height:288px;
+		width:6000px;
+		position:relative;
+		list-style:none;
+		}
+		.bannerslist > li{
+			display:block;
+			width:307px;
+			float:left;
+			}
+	.bannersnav{
+		display:block;
+		width:40px;
+		height:37px;
+		position:absolute;
+		top:121px;
+		font-size:0;
+		text-decoration:none;
+		background:url(../images/design/arrownav.png) 11px 10px no-repeat #343434;
+		box-shadow:0 4px 0 #141414;
+		border-radius:4px;
+		opacity:0.5;
+		}
+		.bannersnav.next{
+			background:url(../images/design/arrownav.png) -48px 10px no-repeat #343434;
+			right:23px;
+			}
+		.bannersnav.prev{
+			background:url(../images/design/arrownav.png) 11px 10px no-repeat #343434;
+			left:40px;
+			}
+		.bannersnav:hover{
+			background-color:#656565;
+			}
 .sideblock{
 	margin:0 0 20px 0;
 	}
@@ -1414,9 +1463,9 @@ footer{
 	.slidercontent{
 		width:594px;
 		}
-	#advanced{
-		display:none;
-		}
+	.infobannersview{
+		width:614px;
+	}
 	.newsbar{
 		width:248px;
 		height:875px;
@@ -1471,6 +1520,14 @@ footer{
 			width:257px;
 			margin-left:20px;
 			}
+	.infobannersview{
+		width:614px;
+	}
+	.infobanner.outerlist{
+		position:absolute;
+		top:-308px;
+		right:0px;
+		}
 	.newsbar{
 		width:904px;
 		height:566px;
