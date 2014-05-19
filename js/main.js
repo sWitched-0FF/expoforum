@@ -47,9 +47,9 @@
 		$(this).parent().addClass('active');
 		$(this).parent().parent().parent().find('.tabsblockpage:eq('+indextab+')').addClass('active').siblings().removeClass('active');
 		});
-	$('.tabsblockpage').fancyfields();
-	$('.newssubscribefilter').fancyfields();
-	$('.eventsfilter select,.eventsfilter input[type!=text],fieldset input[type=checkbox]').fancyfields();
+	//$('.tabsblockpage').fancyfields();
+	//$('.newssubscribefilter').fancyfields();
+	$('.eventsfilter select,.eventsfilter input[type!=text],input[type=checkbox]').fancyfields();
 	$('.scroll-pane').jScrollPane({
 		showArrows: true,
 		autoReinitialise: true
