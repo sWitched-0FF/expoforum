@@ -36,7 +36,7 @@
 	slideNav.find('li:first').find('a').trigger('click');
 	var timerId = setInterval(nextSlide, 10000,slideNav);
 
-	$('.accordiontitle').click(function(){
+	$('.accordiontitle, .accordionlink').click(function(){
 		$(this).siblings().slideToggle();
 		$(this).parent().toggleClass('closed');
 		});
