@@ -117,7 +117,9 @@ input::-moz-placeholder {
 .error{
 	color:#f00;
 	}
-
+.center{
+	text-align:center;
+	}
 .container{
 	width:1212px;
 	margin:0 auto;
@@ -1380,9 +1382,9 @@ header{
 	text-align:left;
 	}
 .textblock input{
-	padding:0px 25px 0px 5px;
+	padding:0px 5px 0px 5px;
 	margin:0.5em 0 1em 0;
-	width:400px;
+	width:390px;
 	height:30px;
 	line-height:30px;
 	background:#ffffff;
@@ -1393,7 +1395,7 @@ header{
 .textblock textarea{
 	padding:0px 25px 0px 5px;
 	margin:0.5em 0 1em 0;
-	width:400px;
+	width:370px;
 	line-height:30px;
 	background:#ffffff;
 	color:#666666;
@@ -1402,7 +1404,7 @@ header{
 	}
 .textblock select,
 .textblock .ffSelectWrapper{
-	width:432px;
+	width:402px;
 	margin:0.5em 0 1em 0;
 	}
 .textblock .ffSelect{
@@ -1441,7 +1443,7 @@ header{
 	color:#333333;
 	}
 .reserverequest{
-	width:432px;
+	width:422px;
 	}
 	.advancennote{
 		margin:0.5em 0 1em 1.6em;
@@ -1450,6 +1452,20 @@ header{
 		margin: 0.5em 0 1em 0;
 		float:none;
 		}
+.accreditationrequest{}
+.accreditationrequest .leftpart{
+	width:430px;
+	float:left;
+	}
+.accreditationrequest .rightpart{
+	width:430px;
+	padding:73px 0 0 0;
+	float:left;
+	}
+.accreditationrequest button.bluebtn{
+	clear:both;
+	margin:1em auto 1em 320px;
+	}
 .partnersblock{
 	width:556px;
 	height:248px;
