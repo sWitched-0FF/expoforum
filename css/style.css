@@ -1512,6 +1512,13 @@ header{
 		text-decoration:none;
 		text-align:center;
 		}
+.stroked{
+	background:url(../images/design/whitestroked.png) left center repeat-x;
+	}
+	.stroked span{
+		background:#ffffff;
+		padding:0 1em 0 0;
+		}
 .partnersblock{
 	width:556px;
 	height:248px;
