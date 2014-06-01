@@ -59,7 +59,7 @@
 			<div class="topcontentblock">
 				<nav class="mainnav">
 					<ul class="mainnavlist">
-						<li><a href="#" class="mainnavlink active">Организаторам</a>
+						<li><a href="#" class="mainnavlink">Организаторам</a>
 							<ul class="mainnavsublist">
 								<li><a href="">Преимущества центра</a></li>
 								<li><a href="">Конгресс-центр</a></li>
@@ -90,15 +90,15 @@
 					<div class="sideblock bluebanner">
 						<section class="sideblocktext">
 							<ul class="sidemenu">
-								<li><a href="">Преимущества центра</a></li>
-								<li><a href="">Конгресс-центр</a></li>
-								<li><a href="">Выставочные павильоны</a></li>
-								<li><a href="">Рестораны и кафе</a></li>
-								<li><a href="">Мероприятия</a></li>
-								<li><a href="" class="active">Подбор зала</a></li>
-								<li><a href="">Онлайн-заявка на организацию мероприятия</a></li>
-								<li><a href="">Услуги</a></li>
-								<li><a href="">Документация</a></li>
+								<li><a href="">Миссия</a></li>
+								<li><a href="">История</a></li>
+								<li><a href="">Партнеры</a></li>
+								<li><a href="">СМИ о нас</a></li>
+								<li><a href="">Медиа-банк</a></li>
+								<li><a href="" class="active">Руководство</a></li>
+								<li><a href="">Вакансии</a></li>
+								<li><a href="">Контакты подразделений</a></li>
+								<li><a href="">Документы</a></li>
 							</ul>
 							<div class="clear"></div>
 						</section>
@@ -109,45 +109,48 @@
 				</div>
 				<div class="mainblock">
 					<div class="textblock">
-						<p><a href="#">← Вернуться к списку залов</a></p>
-						<h2>Бронирование зала</h2>
-						<form class="reserverequest">
-							<label>Название мероприятия</label>
-							<input type="text" name="eventname" value="">
-							<label>Количество участников</label>
-							<select name="peoples" class="niceselect">
-								<option value="0">Любое</option>
-								<option value="1" selected>Менее 50</option>
-								<option value="2">более 50</option>
-							</select>
-							<label>Дата проведения</label>
-							<div class="eventdate">
-								<label>С</label>
-								<input type="text" class="dateui white" name="date1" value="" placeholder="14.05.2014">
-							</div>
-							<div class="eventdate">
-								<label>По</label>
-								<input type="text" class="dateui white" name="date2" value="" placeholder="29.05.2014">
-							</div>
-							<label>Зал для проведения мероприятия</label>
-							<select name="roomnum" class="niceselect">
-								<option value="0">Любой</option>
-								<option value="1" selected>Зал К 1-1</option>
-								<option value="2">Зал К 1-2</option>
-							</select>
-							<input type="checkbox" name="advanced" value="0" class="nicecheck" /><label>Необходимы дополнительные услуги <br>Например: кейтеринг, аренда оборудования, перевод.</label>
-							<p class="advancennote">С полным списком дополнительных услуг можно ознакомиться в разделе <a href="#">«дополнительные услуги центра»</a>.</p>
-							<label>Ваше имя</label>
-							<input type="text" name="name" value="">
-							<label>Телефон</label>
-							<input type="phone" name="eventname" value="">
-							<label>E-mail</label>
-							<input type="email" name="eventname" value="">
-							<label>Дополнительное описание мероприятия</label>
-							<textarea name="eventname" value="" rows="5"></textarea>
-							<button type="submit" class="bluebtn">Отправить заявку</button>
-						</form>
-						<p>Наши менеджеры свяжутся с вами для уточнения деталей</p>
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li>/</li>
+							</ul>
+						</div>
+						<h2>Руководство</h2>
+						<ul class="personeslist">
+							<li class="personecard">
+								<div class="personephoto">
+									<img src="images/persona1.jpg" alt="Петров Иван Иванович">
+								</div>
+								<div class="personainfo">
+									<p class="personaname">Петров Иван Иванович</p>
+									<p class="personarole">Директор по финансам</p>
+									<p class="personacontact">тел. 8 (812) 333-22-22, доб. 2244</p>
+									<a href="#" class="bluebtn writeme">Написать письмо</a>
+								</div>
+							</li>
+							<li class="personecard">
+								<div class="personephoto">
+									<img src="images/persona2.jpg" alt="Иванов Петр Петрович">
+								</div>
+								<div class="personainfo">
+									<p class="personaname">Иванов Петр Петрович</p>
+									<p class="personarole">Директор по развитию</p>
+									<p class="personacontact">тел. 8 (812) 333-22-22, доб. 2244</p>
+									<a href="#" class="bluebtn writeme">Написать письмо</a>
+								</div>
+							</li>
+							<li class="personecard">
+								<div class="personephoto">
+									<img src="images/persona3.jpg" alt="Сергеев Иван Петрович">
+								</div>
+								<div class="personainfo">
+									<p class="personaname">Сергеев Иван Петрович</p>
+									<p class="personarole">Директор по продвижению</p>
+									<p class="personacontact">тел. 8 (812) 333-22-22, доб. 2244</p>
+									<a href="#" class="bluebtn writeme">Написать письмо</a>
+								</div>
+							</li>
+						</ul>
 					</div>
 					<div class="clear"><br/></div>
 				</div>
@@ -244,5 +247,22 @@
 			</div>
 		</div>
 	</footer>
+	<div id="overlay">
+		<div class="modalbox white">
+			<a href="#" id="closemodal">x</a>
+			<p><b>Написать письмо</b></p>
+			<form class="sendmessage">
+				<label>ФИО</label>
+				<input type="text" name="name" value="">
+				<label>Контактный телефон</label>
+				<input type="phone" name="phone" value="">
+				<label>E-mail</label>
+				<input type="email" name="email" value="">
+				<label>Сообщение</label>
+				<textarea name="message" value="" rows="3"></textarea>
+				<button type="submit" class="bluebtn">Отправить</button>
+			</form>
+		</div>
+	</div>
 </body>
 </html>

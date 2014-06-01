@@ -1381,7 +1381,8 @@ header{
 .textblock form{
 	text-align:left;
 	}
-.textblock input{
+.textblock input,
+.modalbox.white input{
 	padding:0px 5px 0px 5px;
 	margin:0.5em 0 1em 0;
 	width:390px;
@@ -1392,7 +1393,8 @@ header{
 	border:1px solid #cccccc;
 	border-radius:3px;
 	}
-.textblock textarea{
+.textblock textarea,
+.modalbox.white textarea{
 	padding:0px 25px 0px 5px;
 	margin:0.5em 0 1em 0;
 	width:370px;
@@ -1415,7 +1417,8 @@ header{
 	background:none;
 	color:#666666;
 	}
-.textblock label{
+.textblock label,
+.modalbox.white label{
 	display:block;
 	}
 	.textblock  .eventdate{
@@ -1466,6 +1469,44 @@ header{
 	clear:both;
 	margin:1em auto 1em 320px;
 	}
+.personeslist{
+	list-style:none;
+	margin:0 0 1em 0;
+	}
+	.personecard{
+		display:block;
+		height:270px;
+		margin:0 0 2em 0;
+		position:relative;
+		}
+	.personephoto{
+		width:210px;
+		height:270px;
+		float:left;
+		}
+	.personainfo{
+		position:absolute;
+		bottom:0;
+		left:230px;
+		}
+	.personainfo p{
+		margin:0;
+		}
+	.personainfo .personaname{
+		font-size:1.2em;
+		font-weight:600;
+		}
+	.personainfo a.bluebtn{
+		color:#ffffff;
+		width:190px;
+		height:20px;
+		float:none;
+		display:block;
+		margin: 0.4em 0;
+		padding:7px 10px;
+		text-decoration:none;
+		text-align:center;
+		}
 .partnersblock{
 	width:556px;
 	height:248px;
@@ -1625,7 +1666,7 @@ footer{
 	.modalbox{
 		position:relative;
 		left:50%;
-		top:50%;
+		top:350px;
 		margin:-270px 0 0 -150px;
 		padding:10px 20px;
 		width:270px;
@@ -1633,6 +1674,12 @@ footer{
 		text-align:left;
 		background:#0072ce;
 		}
+		.modalbox.white{
+			background:#ffffff;
+			color:#333333;
+			width:400px;
+			margin:-270px 0 0 -210px;
+			}
 		#closemodal{
 			display:block;
 			height:20px;
@@ -1641,7 +1688,13 @@ footer{
 			right:10px;
 			top:10px;
 			font-size:0;
-			background:url(../images/design/closemodal.png) center center no-repeat;
+			background:url(../images/design/closemodal.png) center 0 no-repeat;
+			}
+		.white #closemodal{
+			background:url(../images/design/closemodal.png) center -18px no-repeat;
+			}
+		.sendmessage{
+			margin:0.5em 0;
 			}
 	.newssubscribefilter input{
 		padding:5px;
@@ -1686,6 +1739,9 @@ footer{
 	}
 .newssubscribefilter .multiselects .ffCheckboxWrapper a{
 	color:#666666;
+	}
+.multiselects .ffCheckboxWrapper{
+	width:100%;
 	}
 .newssubscribefilter{}
 .newssubscribefilter{}

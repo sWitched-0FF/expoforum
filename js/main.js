@@ -53,7 +53,7 @@
 		showArrows: true,
 		autoReinitialise: true
 		});
-	$('#subscribe').click(function(){
+	$('#subscribe, .writeme').click(function(){
 		$('#overlay').fadeIn();
 		return false;
 		});
