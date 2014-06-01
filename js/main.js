@@ -53,15 +53,16 @@
 		showArrows: true,
 		autoReinitialise: true
 		});
-	$('#subscribe, .writeme').click(function(){
+	$('#subscribe, .writeme, .sendresume').click(function(e){
 		$('#overlay').fadeIn();
+		e.stopPropagation();
 		return false;
 		});
 	$('#overlay, #closemodal').click(function(){
 		$('#overlay').fadeOut();
 		});
-	$('.modalbox').click(function(){
-		return false;
+	$('.modalbox').click(function(e){
+		e.stopPropagation();
 		});
 	$('.dateui').datepicker();
 	
@@ -88,6 +89,9 @@
 		$('#languageselect input[name=language]').val($(this).attr('href').substring(1));
 		$('#languageselect').submit();
 		});
+	$('input[type=file]').bind('change',function() {
+		$(this).parent().find('.filename').val($(this).val());
+	});
 });
 $(window).resize(function(){
 	partnerlistsort($('#partners'),$(document).width());

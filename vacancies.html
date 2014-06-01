@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>ExpoForum</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/fancyfields.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.jscrollpane.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+	<script type="text/javascript" src="js/fancyfields-1.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.datepicker-ru.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body class="w1280px">
+	<header>
+		<div class="container">
+			<div class="headlogo">
+				<a href="/"><img src="images/design/logo.png" alt="ExpoForum"></a>
+			</div>
+			<div class="headcontacts">
+				+7 (812) <b>240-40-40</b> <a href="mailto:info@expoforum.ru">info@expoforum.ru</a>
+			</div>
+			<div class="rightsection">
+				<div class="languageselect">
+					<ul>
+						<li class="active"><a href="#" class="languageicon ru">rus</a></li>
+						<li><a href="#" class="languageicon en">eng</a></li>
+						<li><a href="#" class="languageicon zh">chn</a></li>
+					</ul>
+				</div>
+				<div class="headersearch">
+					<form class="" action="#" method="post">
+						<input type="search" name="keyword" value="" placeholder="Поиск по сайту">
+						<button type="submit" class="headersearchbtn">Найти</button>
+					</form>
+				</div>
+				<div class="headmenu">
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Санкт-Петербург</a></li>
+						<li><a href="#">Новости</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="topcontentblock">
+				<nav class="mainnav">
+					<ul class="mainnavlist">
+						<li><a href="#" class="mainnavlink">Организаторам</a></li>
+						<li><a href="#" class="mainnavlink">Участникам</a></li>
+						<li><a href="#" class="mainnavlink">Посетителям</a></li>
+						<li><a href="#" class="mainnavlink">Прессе</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="middlecontentblock">
+				<div class="sidebar">
+					<div class="topsubmenu">
+						<ul class="topsubmenulist">
+							<li><a href="#" class="topsubmenulink eventscalendaricon active">Календарь событий</a></li>
+							<li><a href="#" class="topsubmenulink schemeicon">План и инфраструктура</a></li>
+							<li><a href="#" class="topsubmenulink routeicon">Как добраться</a></li>
+						</ul>
+					</div>
+					<div class="sideblock bluebanner">
+						<section class="sideblocktext">
+							<ul class="sidemenu">
+								<li><a href="">Миссия</a></li>
+								<li><a href="">История</a></li>
+								<li><a href="">Партнеры</a></li>
+								<li><a href="">СМИ о нас</a></li>
+								<li><a href="">Медиа-банк</a></li>
+								<li><a href="">Руководство</a></li>
+								<li><a href="" class="active">Вакансии</a></li>
+								<li><a href="">Контакты подразделений</a></li>
+								<li><a href="">Документы</a></li>
+							</ul>
+							<div class="clear"></div>
+						</section>
+					</div>
+					<div class="sideblock greenbanner">
+						<section class="sideblocktext">
+							<h3>Подбор материалов</h3>
+							<form class="eventsfilter">
+								<h4>По формату</h4>
+								<input type="checkbox" name="eventformat" value="0" class="nicecheck" /><label>Фотоматериалы</label>
+								<input type="checkbox" name="eventformat" value="1" class="nicecheck" /><label>Видеоматериалы</label>
+								<div class="eventline"></div>
+								<h4>По дате</h4>
+								<div class="eventdate">
+									<label>С</label>
+									<input type="text" class="dateui" name="date1" value="" placeholder="14.05.2014">
+								</div>
+								<div class="eventdate">
+									<label>По</label>
+									<input type="text" class="dateui" name="date2" value="" placeholder="29.05.2014">
+								</div>
+								<p>Или ближайший <a href="#" class="pseudolink">месяц</a> / <a href="#" class="pseudolink">неделя</a></p>
+								<div class="eventline"></div>
+								<h4>По типу события</h4>
+								<select name="eventtype" class="niceselect">
+									<option value="0">Любое</option>
+									<option value="1">Ярмарка</option>
+									<option value="2">Выставка</option>
+								</select>
+								<div class="eventline"></div>
+								<h4>По тематике<a href="#" class="rightlink pseudolink">Показать все</a></h4>
+								<div class="halfcol">
+									<input type="checkbox" name="eventtheme" value="0" class="nicecheck" /><label>Автомобили</label>
+									<input type="checkbox" name="eventtheme" value="1" class="nicecheck" /><label>Строительство</label>
+									<input type="checkbox" name="eventtheme" value="2" class="nicecheck" /><label>Одежда</label>
+								</div>
+								<div class="halfcol">
+									<input type="checkbox" name="eventtheme" value="3" class="nicecheck" /><label>Ювелирные изделия</label>
+									<input type="checkbox" name="eventtheme" value="4" class="nicecheck" /><label>Информационные технологии</label>
+									<input type="checkbox" name="eventtheme" value="5" class="nicecheck" /><label>Промышленность</label>
+								</div>
+								<div class="clear"></div>
+								<button type="submit" class="eventfilterbtn">Найти</button>
+							</form>
+						</section>
+					</div>
+				</div>
+				<div class="mainblock">
+					<div class="textblock greentopblock">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li>/</li>
+							</ul>
+						</div>
+						<h2>Вакансии</h2>
+						<p>Конгрессно-выставочный центр Экспофорум предлагает своим сотрудникам удобные условия работы, доставку на комфортабельном автобусе от станций метро «Площадь Победы» и «Проспект Ветеранов», недорогое высококачественное питание в столовой для сотрудников, а также льготные путевки для детей до 12 лет.</p>
+					</div>
+					<div class="textblock">
+						<div class="accordion noborder">
+							<h4 class="accordionlink"><span class="pseudolink">Маркетолог</span></h4>
+							<div class="accordiontext">
+								<p><b>Обязанности:</b></p>
+								<ul>
+									<li>Проведение комплексного анализа</li>
+									<li>Разработка предложений по позиционированию и развитию корпоративного бренда компании, торговых марок выставочных и конгрессных проектов</li>
+									<li>Проведение анализа деятельности, ценовой политики и номенклатуры услуг конкурентных конгрессных и выставочных площадок российского и международного уровня</li>
+									<li>Проведение анализа деятельности, проектов, номенклатуры услуг, ценовой политики конкурирующих компаний – организаторов конгрессных и выставочных мероприятий, в том числе зарубежных</li>
+									<li>Проведение конкурентного анализа на международном и российском выставочном и конгрессном рынке, выработка предложений по развитию продуктовой линейки, номенклатуры услуг компании, рекомендаций в области ценообразования</li>
+									<li>Мониторинг информации о состоянии отраслевых рынков и изучение их влияния на развитие конгрессных и выставочных проектов</li>
+									<li>Работа с экспертами отраслей</li>
+									<li>Подготовка аналитических отчетов</li>
+								</ul>
+								<p><b>Требования к кандидатам:</b></p>
+								<ul>
+									<li>Высшее образование в области маркетинга, менеджмента, экономическое, социологическое</li>
+									<li>Уверенный пользователь Microsoft office, опытный пользователь Интернет, наличие навыков работы с пакетами для статистической обработки данных будет являться преимуществом</li>
+								</ul>
+								<p><b>Компания предлагает:</b></p>
+								<ul>
+									<li>Заработная плата 39 000 "на руки".</li>
+									<li>Оформление в соответствии с ТК РФ, "белая" заработная плата (оклад, премии)</li>
+									<li>График работы с 9.00 до 18.00, сб и вс - выходные</li>
+									<li>Соблюдение всех социальных норм и гарантий</li>
+									<li>Оплата мобильной связи</li>
+									<li>ДМС после одного года работы</li>
+									<li>Полный рабочий день на территории работодателя</li>
+								</ul>
+								<p><b>Время работы: с 26.05 по 06.06.2014 году</b></p>
+								<p><b>Обязанности:</b></p>
+								<ul>
+									<li>Информирование участников и гостей выставочных мероприятий (собственных и гостевых);</li>
+									<li>Проведение опросов;</li>
+									<li>Занесение информации в базу данных.</li>
+								</ul>
+								<p><b>Требования:</b></p>
+								<ul>
+									<li>Неполное или законченное высшее образование;</li>
+									<li>Четкая дикция, грамотная речь;</li>
+									<li>Рассматриваем также кандидатов без опыта работы!</li>
+								</ul>
+								<p><b>Условия:</b></p>
+								<ul>
+									<li>Заработная плата 1 200 р./день (гросс);</li>
+									<li>График работы: с 9.00 до 18.00, оформление в соответствии с ТК РФ;</li>
+									<li>Работа по срочному трудовому договору с 26 мая по 16 июня с перспективой трудоустройства в штат компании;</li>
+									<li>Рабочее место: 26 линия В.О. БЦ "Биржа".</li>
+								</ul>
+								<p><b>Место работы: БЦ "Биржа", в перспективе - переезд в новый КВЦ в п. Шушары</b></p>
+								<a href="#" class="bluebtn sendresume">Отправить резюме</a>
+							</div>
+						</div>
+						<div class="accordion closed noborder">
+							<h4 class="accordionlink"><span class="pseudolink">Специалист по телемаркетингу</span></h4>
+							<div class="accordiontext">
+								<p><b>Обязанности:</b></p>
+								<ul>
+									<li>Проведение комплексного анализа</li>
+									<li>Разработка предложений по позиционированию и развитию корпоративного бренда компании, торговых марок выставочных и конгрессных проектов</li>
+									<li>Проведение анализа деятельности, ценовой политики и номенклатуры услуг конкурентных конгрессных и выставочных площадок российского и международного уровня</li>
+									<li>Проведение анализа деятельности, проектов, номенклатуры услуг, ценовой политики конкурирующих компаний – организаторов конгрессных и выставочных мероприятий, в том числе зарубежных</li>
+									<li>Проведение конкурентного анализа на международном и российском выставочном и конгрессном рынке, выработка предложений по развитию продуктовой линейки, номенклатуры услуг компании, рекомендаций в области ценообразования</li>
+									<li>Мониторинг информации о состоянии отраслевых рынков и изучение их влияния на развитие конгрессных и выставочных проектов</li>
+									<li>Работа с экспертами отраслей</li>
+									<li>Подготовка аналитических отчетов</li>
+								</ul>
+								<p><b>Требования к кандидатам:</b></p>
+								<ul>
+									<li>Высшее образование в области маркетинга, менеджмента, экономическое, социологическое</li>
+									<li>Уверенный пользователь Microsoft office, опытный пользователь Интернет, наличие навыков работы с пакетами для статистической обработки данных будет являться преимуществом</li>
+								</ul>
+								<p><b>Компания предлагает:</b></p>
+								<ul>
+									<li>Заработная плата 39 000 "на руки".</li>
+									<li>Оформление в соответствии с ТК РФ, "белая" заработная плата (оклад, премии)</li>
+									<li>График работы с 9.00 до 18.00, сб и вс - выходные</li>
+									<li>Соблюдение всех социальных норм и гарантий</li>
+									<li>Оплата мобильной связи</li>
+									<li>ДМС после одного года работы</li>
+									<li>Полный рабочий день на территории работодателя</li>
+								</ul>
+								<p><b>Время работы: с 26.05 по 06.06.2014 году</b></p>
+								<p><b>Обязанности:</b></p>
+								<ul>
+									<li>Информирование участников и гостей выставочных мероприятий (собственных и гостевых);</li>
+									<li>Проведение опросов;</li>
+									<li>Занесение информации в базу данных.</li>
+								</ul>
+								<p><b>Требования:</b></p>
+								<ul>
+									<li>Неполное или законченное высшее образование;</li>
+									<li>Четкая дикция, грамотная речь;</li>
+									<li>Рассматриваем также кандидатов без опыта работы!</li>
+								</ul>
+								<p><b>Условия:</b></p>
+								<ul>
+									<li>Заработная плата 1 200 р./день (гросс);</li>
+									<li>График работы: с 9.00 до 18.00, оформление в соответствии с ТК РФ;</li>
+									<li>Работа по срочному трудовому договору с 26 мая по 16 июня с перспективой трудоустройства в штат компании;</li>
+									<li>Рабочее место: 26 линия В.О. БЦ "Биржа".</li>
+								</ul>
+								<p><b>Место работы: БЦ "Биржа", в перспективе - переезд в новый КВЦ в п. Шушары</b></p>
+								<a href="#" class="bluebtn sendresume">Отправить резюме</a>
+							</div>
+						</div>
+						<div class="accordion closed noborder">
+							<h4 class="accordionlink"><span class="pseudolink">Менеджер по персоналу</span></h4>
+							<div class="accordiontext">
+								<p><b>Обязанности:</b></p>
+								<ul>
+									<li>Проведение комплексного анализа</li>
+									<li>Разработка предложений по позиционированию и развитию корпоративного бренда компании, торговых марок выставочных и конгрессных проектов</li>
+									<li>Проведение анализа деятельности, ценовой политики и номенклатуры услуг конкурентных конгрессных и выставочных площадок российского и международного уровня</li>
+									<li>Проведение анализа деятельности, проектов, номенклатуры услуг, ценовой политики конкурирующих компаний – организаторов конгрессных и выставочных мероприятий, в том числе зарубежных</li>
+									<li>Проведение конкурентного анализа на международном и российском выставочном и конгрессном рынке, выработка предложений по развитию продуктовой линейки, номенклатуры услуг компании, рекомендаций в области ценообразования</li>
+									<li>Мониторинг информации о состоянии отраслевых рынков и изучение их влияния на развитие конгрессных и выставочных проектов</li>
+									<li>Работа с экспертами отраслей</li>
+									<li>Подготовка аналитических отчетов</li>
+								</ul>
+								<p><b>Требования к кандидатам:</b></p>
+								<ul>
+									<li>Высшее образование в области маркетинга, менеджмента, экономическое, социологическое</li>
+									<li>Уверенный пользователь Microsoft office, опытный пользователь Интернет, наличие навыков работы с пакетами для статистической обработки данных будет являться преимуществом</li>
+								</ul>
+								<p><b>Компания предлагает:</b></p>
+								<ul>
+									<li>Заработная плата 39 000 "на руки".</li>
+									<li>Оформление в соответствии с ТК РФ, "белая" заработная плата (оклад, премии)</li>
+									<li>График работы с 9.00 до 18.00, сб и вс - выходные</li>
+									<li>Соблюдение всех социальных норм и гарантий</li>
+									<li>Оплата мобильной связи</li>
+									<li>ДМС после одного года работы</li>
+									<li>Полный рабочий день на территории работодателя</li>
+								</ul>
+								<p><b>Время работы: с 26.05 по 06.06.2014 году</b></p>
+								<p><b>Обязанности:</b></p>
+								<ul>
+									<li>Информирование участников и гостей выставочных мероприятий (собственных и гостевых);</li>
+									<li>Проведение опросов;</li>
+									<li>Занесение информации в базу данных.</li>
+								</ul>
+								<p><b>Требования:</b></p>
+								<ul>
+									<li>Неполное или законченное высшее образование;</li>
+									<li>Четкая дикция, грамотная речь;</li>
+									<li>Рассматриваем также кандидатов без опыта работы!</li>
+								</ul>
+								<p><b>Условия:</b></p>
+								<ul>
+									<li>Заработная плата 1 200 р./день (гросс);</li>
+									<li>График работы: с 9.00 до 18.00, оформление в соответствии с ТК РФ;</li>
+									<li>Работа по срочному трудовому договору с 26 мая по 16 июня с перспективой трудоустройства в штат компании;</li>
+									<li>Рабочее место: 26 линия В.О. БЦ "Биржа".</li>
+								</ul>
+								<p><b>Место работы: БЦ "Биржа", в перспективе - переезд в новый КВЦ в п. Шушары</b></p>
+								<a href="#" class="bluebtn sendresume">Отправить резюме</a>
+							</div>
+						</div>
+					</div>
+					<div class="clear"><br/></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bottomnav">
+		<div class="container">
+			<div class="column3">
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>О компании</b></a></li>
+					<li><a href="#">Миссия</a></li>
+					<li><a href="#">История</a></li>
+					<li><a href="#">Партнеры</a></li>
+					<li><a href="#">СМИ о нас</a></li>
+					<li><a href="#">Медиа-банк</a></li>
+					<li><a href="#">Руководство</a></li>
+					<li><a href="#">Вакансии</a></li>
+					<li><a href="#">Контакты подразделений</a></li>
+				</ul>
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>Новости</b></a></li>
+					<li><a href="#">Новости компании</a></li>
+					<li><a href="#">Новости выставок</a></li>
+				</ul>
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>О Санкт-Петербурге</b></a></li>
+				</ul>
+			</div>
+			<div class="column3">
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>Посетителям</b></a></li>
+					<li><a href="#">Сервисы</a></li>
+					<li><a href="#">Онлайн-регистрация на мероприятие</a></li>
+					<li><a href="#">Организация поездки</a></li>
+				</ul>
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>Прессе</b></a></li>
+					<li><a href="#">Пресс-релизы</a></li>
+					<li><a href="#">Аккредитация</a></li>
+					<li><a href="#">Пресс-центр</a></li>
+					<li><a href="#">Организация поездки</a></li>
+				</ul>
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>Участникам</b></a></li>
+					<li><a href="#">Общие условия участия</a></li>
+					<li><a href="#">Онлайн-заявка на участие</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Электронные каталоги</a></li>
+				</ul>
+			</div>
+			<div class="column3">
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>Организаторам</b></a></li>
+					<li><a href="#">Преимущества центра</a></li>
+					<li><a href="#">Конгресс-центр</a></li>
+					<li><a href="#">Выставочные павильоны</a></li>
+					<li><a href="#">Рестораны и кафе</a></li>
+					<li><a href="#">Мероприятия</a></li>
+					<li><a href="#">Подбор помещения</a></li>
+					<li><a href="#">Онлайн-заявка на организацию мероприятия</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Документация</a></li>
+				</ul>
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>Календарь событий</b></a></li>
+				</ul>
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>Как добраться</b></a></li>
+				</ul>
+				<ul class="bottomlinkslist">
+					<li><a href="#"><b>План и инфраструктура комплекса</b></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="copyright">
+				Экспофорум &copy; 2014
+			</div>
+			<div class="footercontacts">
+				+7 (812) 240-40-40  <a href="mailto:info@expoforum.ru">info@expoforum.ru</a>
+			</div>
+			<div class="footersocial">
+				<p>Экспофорум в соцсетях:</p>
+				<ul class="sociallinks">
+					<li><a href="#" class="socialicon vkcom">vkcom</a></li>
+					<li><a href="#" class="socialicon facebook">facebook</a></li>
+					<li><a href="#" class="socialicon googleplus">googleplus</a></li>
+					<li><a href="#" class="socialicon twitter">twitter</a></li>
+					<li><a href="#" class="socialicon youtube">youtube</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<div id="overlay">
+		<div class="modalbox white">
+			<a href="#" id="closemodal">x</a>
+			<p><b>Анкета соискателя</b></p>
+			<form class="sendresumeform">
+				<label>Фамилия</label>
+				<input type="text" name="name1" value="">
+				<label>Имя</label>
+				<input type="text" name="name2" value="">
+				<label>Отчество</label>
+				<input type="text" name="name3" value="">
+				<label>Контактный телефон</label>
+				<input type="phone" name="phone" value="">
+				<label>E-mail</label>
+				<input type="email" name="email" value="">
+				<label>Вакансия</label>
+				<select name="vacancy" class="niceselect">
+					<option value="0">Маркетолог</option>
+					<option value="1" selected>Специалист по телемаркетингу</option>
+					<option value="2">Менеджер по персоналу</option>
+				</select>
+				<label>Прикрепить резюме</label>
+				<div class="filefield">
+					<input name="filename" class="filename" type="text" />
+					<button type="submit" class="bluebtn">Выбрать файл</button>
+					<input name="file" class="filefail" type="file" />
+				</div>
+				<button type="submit" class="bluebtn">Отправить</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
