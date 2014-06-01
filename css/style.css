@@ -1393,6 +1393,9 @@ header{
 	border:1px solid #cccccc;
 	border-radius:3px;
 	}
+.textblock .multiselects input{
+	width:auto;
+	}
 .textblock textarea,
 .modalbox.white textarea{
 	padding:0px 25px 0px 5px;
@@ -1783,9 +1786,6 @@ footer{
 	}
 .newssubscribefilter .multiselects .ffCheckboxWrapper a{
 	color:#666666;
-	}
-.multiselects .ffCheckboxWrapper{
-	width:100%;
 	}
 .newssubscribefilter{}
 .newssubscribefilter{}
