@@ -641,8 +641,8 @@ header{
 	}
 	.infobannertext{
 		padding:10px 20px;
-		height:116px;
-		overflow-y:auto;
+		height:105px;
+		overflow:hidden;
 		}
 		.infobannertext h3{
 			font-size:20px;
