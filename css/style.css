@@ -366,6 +366,7 @@ header{
 		}
 	.mainnavlist li{
 		display:inline;
+		position:relative;
 		}
 		.mainnavlink{
 			display:inline-block;
@@ -379,6 +380,43 @@ header{
 			.mainnavlink.active{
 				background:#9f46b1;
 				color:#ffffff;
+				}
+	.mainnavsublist{
+		display:none;
+		width:350px;
+		height:auto;
+		padding:5px 0 0 0;
+		margin:0;
+		position:absolute;
+		top:45px;
+		z-index:200;
+		background:url(../images/design/arrowsubmenu.png) 30px 1px no-repeat;
+		}
+	.mainnavlist li:hover .mainnavsublist{
+		display:block;
+		}
+	.mainnavsublist li{
+		display:block;
+		padding:0px 10px;
+		background:#9f46b1;
+		}
+	.mainnavsublist li:first-child{
+		padding-top:5px;
+		}
+	.mainnavsublist li:last-child{
+		padding-bottom:5px;
+		}
+		.mainnavsublist li a{
+			display:block;
+			padding:12px 10px;
+			text-decoration:none;
+			border-bottom:1px solid #b26bc1;
+			}
+		.mainnavsublist li:last-child a{
+			border:0;
+			}
+			.mainnavsublist li a:hover{
+				background:#b26bc1;
 				}
 .mainblock{
 	margin:0 0 0 310px;
@@ -508,7 +546,60 @@ header{
 		.noborder .accordiontext{
 			border:0 none;
 			}
-
+.roomslist{
+	list-style:none;
+	margin:1em 0;
+	}
+	.roomitem{
+		margin:0.5em 0;
+		}
+	.roomitem h3{
+		margin:0.3em 0;
+		}
+	.roomsubtype{
+		color:#999999;
+		font-style:italic;
+		}
+	.roomgallery{
+		height:140px;
+		}
+	.roomminipreviewlist{
+		list-style:none;
+		margin:1em 0;
+		width:650px;
+		height:100px;
+		float:left;
+		}
+		.roomminipreviewlist li{
+			width:150px;
+			float:left;
+			margin:0 10px 0 0;
+			}
+	.roomfastreserv{
+		float:left;
+		width:200px;
+		}
+		.bluebtn{
+			background:#0089d8;
+			border: 0 none;
+			border-radius: 3px;
+			box-shadow: 0.5px 4px 0 #0072ce;
+			color: #FFFFFF;
+			cursor: pointer;
+			font-family: arial;
+			font-weight: bold;
+			height: 36px;
+			margin: 0 0 0 4px;
+			padding: 5px;
+			width: 200px;
+			}
+		.bluebtn:hover{
+			background:#0e91dc;
+			box-shadow: 0.5px 4px 0 #0c7bd4;
+			}
+		.roomfastreserv .bluebtn{
+			margin:73px 0 10px 0;
+			}
 .announcements{
 	background:#ff8200;
 	padding:20px 10px 10px 20px;
@@ -822,6 +913,49 @@ header{
 	.sidemenu .active{
 		color:#66ccff;
 		text-decoration:none;
+		}
+.topblockfilterform{
+	display:block;
+	float:none;
+	margin:0 0;
+	min-height:70px;
+	text-align:left;
+	}
+.filtercontrolgroup{
+	display:block;
+	width:310px;
+	float:left;
+	margin:0 1em 0 0;
+	}
+	.filtercontrolgroup h4{
+		margin:0.5em 0;
+		}
+	.filtercontrolgroup label{
+		width:100px;
+		display:block;
+		float:left;
+		}
+	.greenbtn{
+		display:block;
+		padding:7px 16px;
+		margin:0.5em auto 0 auto;
+		width:200px;
+		color:#ffffff;
+		text-decoration:none;
+		font-family:arial;
+		font-weight:bold;
+		border:0 none;
+		cursor:pointer;
+		border-radius:3px;
+		background:#3e8c0e;
+		box-shadow:0.5px 4px 0 #34750c;
+		}
+		.greenbtn:hover{
+			background:#50b312;
+			}
+	.greenbtn.topmargin{
+		margin-top:30px;
+		float:left;
 		}
 .partnersfilter{
 	color:#ffffff;
@@ -1210,15 +1344,18 @@ header{
 			border:0 none;
 			border-radius:3px;
 			}
-	.eventsfilter .ffSelectWrapper{
+	.eventsfilter .ffSelectWrapper,
+	.filtercontrolgroup .ffSelectWrapper{
 		width:250px;
 		}
-	.eventsfilter .ffSelect > a > span{
+	.eventsfilter .ffSelect > a > span,
+	.filtercontrolgroup .ffSelect > a > span{
 		color:#666666;
 		background:none #ffffff;
 		border-radius:3px 0 0 3px;
 		}
-	.eventsfilter .ffSelectMenuWrapper .ffSelectMenuMidBG li span{
+	.eventsfilter .ffSelectMenuWrapper .ffSelectMenuMidBG li span,
+	.filtercontrolgroup .ffSelectMenuWrapper .ffSelectMenuMidBG li span{
 		color:#666666;
 		}
 	.eventfilterbtn{

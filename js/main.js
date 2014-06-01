@@ -48,7 +48,7 @@
 		$(this).parent().parent().parent().find('.tabsblockpage:eq('+indextab+')').addClass('active').siblings().removeClass('active');
 		});
 
-	$('.eventsfilter select,.eventsfilter input[type!=text],input[type=checkbox]:not(.newsfilter input[type=checkbox])').fancyfields();
+	$('select,.eventsfilter input[type!=text],input[type=checkbox]:not(.newsfilter input[type=checkbox])').fancyfields();
 	$('.scroll-pane').jScrollPane({
 		showArrows: true,
 		autoReinitialise: true
