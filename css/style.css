@@ -1376,6 +1376,80 @@ header{
 		.eventfilterbtn:hover{
 			background:#50b312;
 			}
+.textblock form{
+	text-align:left;
+	}
+.textblock input{
+	padding:0px 25px 0px 5px;
+	margin:0.5em 0 1em 0;
+	width:400px;
+	height:30px;
+	line-height:30px;
+	background:#ffffff;
+	color:#666666;
+	border:1px solid #cccccc;
+	border-radius:3px;
+	}
+.textblock textarea{
+	padding:0px 25px 0px 5px;
+	margin:0.5em 0 1em 0;
+	width:400px;
+	line-height:30px;
+	background:#ffffff;
+	color:#666666;
+	border:1px solid #cccccc;
+	border-radius:3px;
+	}
+.textblock select,
+.textblock .ffSelectWrapper{
+	width:432px;
+	margin:0.5em 0 1em 0;
+	}
+.textblock .ffSelect{
+	border:1px solid #cccccc;
+	border-radius:3px;
+	}
+.textblock .ffSelect > a > span{
+	background:none;
+	color:#666666;
+	}
+.textblock label{
+	display:block;
+	}
+	.textblock  .eventdate{
+		width:205px;
+		height:45px;
+		float:left;
+		}
+		.textblock  .eventdate label{
+			width:auto;
+			float:left;
+			}
+	.dateui.white{
+		padding:0px 55px 0px 5px;
+		width:115px;
+		height:32px;
+		margin:2px 0 0 0;
+		float:left;
+		line-height:30px;
+		background:url(../images/design/icondatepickwhite.png) left 0px no-repeat #ffffff;
+		color:#666666;
+		border:0 none;
+		border-radius:0;
+		}
+.textblock .ffCheckboxWrapper a{
+	color:#333333;
+	}
+.reserverequest{
+	width:432px;
+	}
+	.advancennote{
+		margin:0.5em 0 1em 1.6em;
+		}
+	.reserverequest .bluebtn{
+		margin: 0.5em 0 1em 0;
+		float:none;
+		}
 .partnersblock{
 	width:556px;
 	height:248px;
