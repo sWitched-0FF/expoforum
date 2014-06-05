@@ -92,6 +92,9 @@ a:hover{
 	text-decoration:none;
 	cursor:pointer;
 	}
+input{
+	box-sizing:content-box;
+	}
 input,textarea,button{
 	font-family:arial,helvetica,sans-serif;
 	}
